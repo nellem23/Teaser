@@ -1,10 +1,16 @@
 /*** Global ***/
+html{
+    overflow: hidden;
+    height: 100%;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   letter-spacing: .05rem;
   margin: auto 0;
+  height: 100%;
+  overflow: auto;
 }
 
 img {
@@ -117,7 +123,7 @@ a:hover {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  height: 100% !important;
+  height: 130% !important;
   z-index: 0;
 }
 
@@ -146,6 +152,10 @@ a:hover {
 
 
 @media only screen and (max-width: 40.063em) {
+  html {
+    overflow-y: scroll;
+  }
+
   h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
@@ -162,7 +172,6 @@ a:hover {
     letter-spacing: .05em;
     text-align: left;
   }
-
   #logo {}
 
-   }
+}
