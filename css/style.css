@@ -1,0 +1,168 @@
+/*** Global ***/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  letter-spacing: .05rem;
+  margin: auto 0;
+}
+
+img {
+  /* Prevents dragging of images/divs etc */
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none; 
+  user-drag: none; 
+}
+
+.object-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*** Typography ***/
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 24px;
+  font-size: 4.0em;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 1.125em;
+  letter-spacing: .05rem;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: underline; 
+}
+
+#heading a:hover{
+  opacity: .7;
+  font-weight: 500; 
+}
+
+a:hover {
+  color: #016FC4; 
+}
+
+@font-face {
+  font-family: 'Droid Sans Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans Mono'), local('DroidSansMono'), url(http://fonts.gstatic.com/s/droidsansmono/v7/ns-m2xQYezAtqh7ai59hJaH0X__W3S3MJL29bc5CWfs.woff) format('woff');
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400s,500,600);
+
+/*** Buttons ***/
+
+.button {
+  border-radius: 48px;
+  padding: 12px 24px 10px 24px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: .25rem;
+  font-weight: 500;
+}
+
+.secondary-button {
+  border: 2px solid #016fc4;
+  color: #016fc4;
+  background-color: transparent;
+}
+
+.secondary-button:hover {
+  color: #fff;
+  background-color: #016fc4;
+}
+
+.secondary-button:active {
+  background-color: transparent;
+}
+
+.secondary-button-white {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  font-size: 0.9em;
+  margin: 1rem .5rem 0 .5rem;
+}
+
+.secondary-button-white:hover {
+  color: #016fc4;
+  background-color: #fff;
+}
+
+.secondary-button-white:active {
+  background-color: transparent;
+}
+
+/*** Teaser Landing Page Specific ***/
+
+#wrapper {
+  background-image: url('img/img_hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100% !important;
+  z-index: 0;
+}
+
+#heading {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+#main {
+  margin-bottom: 1rem;
+}
+
+#logo {
+  margin-top: 1.5rem;
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 24px;
+  font-size: 2.3em;
+  }
+}
+
+
+@media only screen and (max-width: 40.063em) {
+  h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 24px;
+    font-size: 2.3em;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 1.125em;
+    letter-spacing: .05em;
+    text-align: left;
+  }
+
+  #logo {}
+
+   }
